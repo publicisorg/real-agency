@@ -1,37 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+
+import { Button, Navbar } from 'flowbite-react'
 import './App.css'
 import Header from './components/common/containers/Header'
+import Menu from './components/common/containers/navbar'
+import realLogo from './assets/logoReal.svg'
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Header/>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div className='container mx-auto font-zector'>
+      <Menu/>
+
+      <Header />
+      <p className='font-vegawanty text-center text-xl'>Our daily work, our core, <br />
+what we stand for moves us for a continuous search on unleashing creative value for brands. <br />
+Conneting strategies, ideas & people through storytelling and cutting edge experiences. <br />
+We make things happen, tangible, shareable. <br />
+we make them..</p>
     </div>
   )
 }
