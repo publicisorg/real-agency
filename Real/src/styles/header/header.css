@@ -1,0 +1,41 @@
+.header {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.bg-black {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: none;
+}
+
+.black-space {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+.real-image {
+    width: 100%;
+}
+
+.yt-video-real {
+    -ms-zoom: 2;
+    -moz-transform: scale(2);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(2);
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform: translate(-50%,-50%) scale(2);
+    pointer-events: none;
+}
