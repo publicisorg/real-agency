@@ -69,7 +69,50 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.logoR {width: 70px; display: inline-block;}
+  .st0{opacity:0.5;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10; -webkit-animation: rotation 15s linear infinite;
+    animation: rotation 15s linear infinite;
+    transform-origin: center;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:0.75;stroke-miterlimit:10;}
+	.st4{fill:#FF0000;}
+	.st5{fill:#E5E5E5;}
+	.st6{fill:none;stroke:#A67C52;stroke-width:1.5296;stroke-miterlimit:10;}
+	.st7{fill:#A57C52;}
+	.st8{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st9{opacity:0.46;fill:#FC0000;}
+	.st10{opacity:0.46;fill:#0000FF;}
 
+
+@-webkit-keyframes rotation /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
