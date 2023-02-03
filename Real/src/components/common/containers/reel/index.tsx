@@ -8,9 +8,7 @@ const reel = () => {
   const reelhtml = (
     <div className="reel">
         <div className="reel-container">
-            <video className="reel-video" width="100%" height="auto" controls>
-                <source src={video} type="video/mp4"/>
-            </video>
+            <video className="reel-video" src={video} autoPlay muted loop/>
             <div className="reel-title">
                 <h3>Reel</h3>
             </div>
