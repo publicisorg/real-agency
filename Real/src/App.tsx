@@ -4,20 +4,21 @@ import './App.css'
 import Header from './components/common/containers/Header'
 import Menu from './components/common/containers/navbar'
 import realLogo from './assets/logoReal.svg'
+import Reel from './components/common/containers/reel'
 
 
 function App() {
 
   return (
+    <>
     <div className='container mx-auto font-zector'>
       <Menu />
 
       <Header />
-      <p className='font-vegawanty text-center text-xl'>Our daily work, our core, <br />
-        what we stand for moves us for a continuous search on unleashing creative value for brands. <br />
-        Conneting strategies, ideas & people through storytelling and cutting edge experiences. <br />
-        We make things happen, tangible, shareable. <br />
-        we make them..</p>
+      <h1 className="text-center my-5">
+        Shaping true connections
+      </h1>
+      
 <div className="text-center my-5">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         viewBox="0 0 67.66 65.04" className='logoR'>
@@ -42,7 +43,14 @@ function App() {
         </g>
       </svg>
       </div>
+      <p className='font-vegawanty text-center text-xl'>Our daily work, our core, <br />
+        what we stand for moves us for a continuous search on unleashing creative value for brands. <br />
+        Conneting strategies, ideas & people through storytelling and cutting edge experiences. <br />
+        We make things happen, tangible, shareable. <br />
+        we make them..</p>
     </div>
+    <Reel/>
+    </>
   )
 }
 
