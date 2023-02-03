@@ -5,6 +5,7 @@ import Header from './components/common/containers/Header'
 import Menu from './components/common/containers/navbar'
 import realLogo from './assets/logoReal.svg'
 import Reel from './components/common/containers/reel'
+import Gallery from './components/common/containers/gallery'
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
         we make them..</p>
     </div>
     <Reel/>
+    <Gallery/>
     </>
   )
 }
