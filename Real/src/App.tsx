@@ -6,7 +6,8 @@ import Menu from './components/common/containers/navbar'
 import realLogo from './assets/logoReal.svg'
 import Reel from './components/common/containers/reel'
 import Gallery from './components/common/containers/gallery'
-
+import Marquecina from './components/ui/videoGallery/Marquee'
+import Contact from './components/common/containers/Contact'
 
 function App() {
 
@@ -52,6 +53,8 @@ function App() {
     </div>
     <Reel/>
     <Gallery/>
+    <Marquecina/>
+    <Contact/>
     </>
   )
 }
