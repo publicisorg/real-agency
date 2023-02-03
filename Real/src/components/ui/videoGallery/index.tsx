@@ -63,8 +63,8 @@ const videoGallery = () => {
     }
   ];
   return (
-    <div className="p-5">
-    <div className="">
+    <div className="p-5 container">
+    <div>
       {gallery.map((item, index) => {
         return (
           <div className="border h-9/12  rounded-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" key={index}>
