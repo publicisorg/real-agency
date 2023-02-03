@@ -6,7 +6,6 @@ import Menu from './components/common/containers/navbar'
 import realLogo from './assets/logoReal.svg'
 
 
-
 function App() {
 
   return (
