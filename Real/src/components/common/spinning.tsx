@@ -7,7 +7,7 @@ const spinning = (props) => {
     function spinninghtml(props) {
         return (
             <>
-                <div className="single-spinning-container flex relative w-52">
+                <div className="single-spinning-container flex relative w-52 mb-12">
                     <img src={borde} className="animate-spin" />
                         <p className="flex justify-center items-center absolute inset-0 text-2xl text-center whitespace-pre-wrap">
                             {props.insideText}

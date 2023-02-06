@@ -18,8 +18,8 @@ function App() {
     <div className='container mx-auto font-zector'>
       <Menu />
       <Header />
+      <Manifest />
     </div>
-    <Manifest/>
     <Reel/>
     <Gallery/>
     <Marquecina/>
