@@ -9,6 +9,7 @@ import Gallery from './components/common/containers/gallery'
 import Marquecina from './components/ui/videoGallery/Marquee'
 import Contact from './components/common/containers/Contact'
 import Manifest from './components/common/containers/manifest'
+import Footers from './components/common/containers/Footer'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <Gallery/>
     <Marquecina/>
     <Contact/>
+    <Footers/>
     </>
   )
 }
