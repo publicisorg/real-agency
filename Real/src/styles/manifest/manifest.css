@@ -1,7 +1,23 @@
 #manifest-text h3 {
     font-family: "vegawantyregular", Helvetica, Arial, sans-serif;
     font-size: 40px;
-    line-height: 30px;
-    padding: 5px 20px;
-    border-bottom: 1px solid white;
+}
+
+p {
+    font-family: "vegawantyregular", Helvetica, Arial, sans-serif;
+}
+
+.cls-1 {
+    fill: none;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    stroke-width: .75px;
+}
+
+.color-world {
+    fill: #a57c52;
+}
+
+.aux-neg-bottom {
+    bottom: -50px;
 }

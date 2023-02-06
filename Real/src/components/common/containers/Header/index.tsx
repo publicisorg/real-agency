@@ -1,4 +1,16 @@
 import '../../../../styles/header/header.css';
+import Subtitle from '../../subtitle';
+import Title from '../../title';
+
+const textSubtitle = `Our daily work, our core, \n
+what we stand for moves us for a continuous search \n
+ on unleashing creative value for brands. \n
+Conneting strategies, ideas & people through \n
+storytelling and cutting edge experiences. \n
+We make things happen, tangible, shareable. \n
+we make them.`;
+
+const textTitle = "Shaping true connections";
 
 const Header = () => {
     return headerhtml;
@@ -18,9 +30,7 @@ const Header = () => {
         src="https://www.youtube.com/embed/s-rhii6znMU?autoplay=1&controls=0&mute=1&loop=1&version=3&vq=hd1080">
         </iframe>
     </div>
-    <h1 className="text-center my-5">
-      Shaping true connections
-    </h1>
+    <Title titleText={textTitle}/>
     <div className="text-center my-5">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         viewBox="0 0 67.66 65.04" className='logoR'>
@@ -45,11 +55,8 @@ const Header = () => {
         </g>
       </svg>
     </div>
-    <p className='font-vegawanty text-center text-xl'>Our daily work, our core, <br />
-        what we stand for moves us for a continuous search on unleashing creative value for brands. <br />
-        Conneting strategies, ideas & people through storytelling and cutting edge experiences. <br />
-        We make things happen, tangible, shareable. <br />
-        we make them..</p>
+    <p className='font-vegawanty text-center text-xl'></p>
+      <Subtitle subtitleText={textSubtitle}/>
     </>
   );
   
