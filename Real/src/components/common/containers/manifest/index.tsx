@@ -21,7 +21,7 @@ const manifest = () => {
     <>
     <div className="py-16">
       <div className="text-center w-full relative">
-        <img src={image} className="mx-auto my-8"/>
+        <img src={image} className="mx-auto my-8 w-11/12"/>
         <div id="manifest-text" className="absolute inset-0 flex items-center justify-center">
           <h3>Manifest</h3>
         </div>
