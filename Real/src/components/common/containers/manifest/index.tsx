@@ -1,7 +1,6 @@
 import '../../../../styles/manifest/manifest.css';
-import image from '../../../../../public/manifest.png'
 import Spinning from '../../spinning'
-import SpinningPublicis from '../../spinning-publicis'
+import ManifestBanner from './manifest-banner'
 import Subtitle from '../../subtitle'
 import Title from '../../title'
 
@@ -20,15 +19,7 @@ const manifest = () => {
   const manifesthtml = (
     <>
     <div className="py-8 sm:py-16">
-      <div className="text-center w-full relative">
-        <img src={image} className="mx-auto my-8 w-11/12"/>
-        <div id="manifest-text" className="absolute inset-0 flex items-center justify-center">
-          <h3>Manifest</h3>
-        </div>
-        <div id="manifest-logo" className="absolute right-4 -bottom-8 sm:right-36 flex items-center  sm:aux-neg-bottom ">
-          <SpinningPublicis />
-        </div>
-      </div>
+      <ManifestBanner />
       <div className="flex justify-between items-center w-11/12 mx-auto my-12">
         <svg className="w-6 hidden sm:block" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.15 23.15">
           <circle className="cls-1" cx="11.57" cy="11.57" r="8.19"/>
