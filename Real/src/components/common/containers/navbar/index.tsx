@@ -1,12 +1,9 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import {
-  createBrowserRouter,
-  RouterProvider,
-  Route,
+  Link
 
 } from "react-router-dom";
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 const Menu = () => {
@@ -21,16 +18,16 @@ const Menu = () => {
       <div className="w-full md:block md:w-auto hidden">
         <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
           <li>
-            <Link activeClass="active" className="block py-2 text-xl text-white md:hover:text-gray-500" to="about" spy={true} smooth={true} duration={500} >ABOUT</Link>
+            <Link className="block py-2 text-xl text-white md:hover:text-gray-500" to="about" >ABOUT</Link>
           </li>
           <li>
-            <Link activeClass="active" className="block py-2 text-xl text-white md:hover:text-gray-500" to="reel" spy={true} smooth={true} duration={500} >REEL</Link>
+            <Link  className="block py-2 text-xl text-white md:hover:text-gray-500" to="reel" >REEL</Link>
 
             </li>
             <li>
-              <Link activeClass="active" className="block py-2 text-xl text-white md:hover:text-gray-500" to="work" spy={true} smooth={true} duration={500} >WORK</Link>
+              <Link  className="block py-2 text-xl text-white md:hover:text-gray-500" to="work"  >WORK</Link>
               </li>
-                <Link activeClass="active" className="block py-2 text-xl text-white md:hover:text-gray-500" to="contact" spy={true} smooth={true} duration={500} >Contact</Link>
+                <Link className="block py-2 text-xl text-white md:hover:text-gray-500" to="contact" >Contact</Link>
                 <li><a className="block py-2 text-xl text-white md:hover:text-gray-500" href="/navbars">ES</a></li>
               </ul>
             </div>
