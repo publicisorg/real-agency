@@ -1,11 +1,4 @@
 import React from "react";
-import { createRoot } from "react-dom/client";
-import {
-  Link
-
-} from "react-router-dom";
-
-
 const Menu = () => {
 
 
@@ -18,16 +11,16 @@ const Menu = () => {
       <div className="w-full md:block md:w-auto hidden">
         <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
           <li>
-            <Link className="block py-2 text-xl text-white md:hover:text-gray-500" to="about" >ABOUT</Link>
+            <a className="block py-2 text-xl text-white md:hover:text-gray-500" href="#">ABOUT</a>
           </li>
           <li>
-            <Link  className="block py-2 text-xl text-white md:hover:text-gray-500" to="reel" >REEL</Link>
+            <a  className="block py-2 text-xl text-white md:hover:text-gray-500"  href="#">REEL</a>
 
             </li>
             <li>
-              <Link  className="block py-2 text-xl text-white md:hover:text-gray-500" to="work"  >WORK</Link>
+              <a  className="block py-2 text-xl text-white md:hover:text-gray-500" href="#"  >WORK</a>
               </li>
-                <Link className="block py-2 text-xl text-white md:hover:text-gray-500" to="contact" >Contact</Link>
+                <a className="block py-2 text-xl text-white md:hover:text-gray-500"  href="#">Contact</a>
                 <li><a className="block py-2 text-xl text-white md:hover:text-gray-500" href="/navbars">ES</a></li>
               </ul>
             </div>
