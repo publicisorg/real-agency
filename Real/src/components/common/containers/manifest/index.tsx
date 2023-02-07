@@ -25,7 +25,7 @@ const manifest = () => {
         <div id="manifest-text" className="absolute inset-0 flex items-center justify-center">
           <h3>Manifest</h3>
         </div>
-        <div id="manifest-logo" className="absolute right-4 sm:right-36 flex items-center bottom-0 sm:aux-neg-bottom ">
+        <div id="manifest-logo" className="absolute right-4 -bottom-8 sm:right-36 flex items-center  sm:aux-neg-bottom ">
           <SpinningPublicis />
         </div>
       </div>

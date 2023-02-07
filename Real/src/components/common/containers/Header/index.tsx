@@ -18,7 +18,7 @@ const Header = () => {
 
   const headerhtml = (
     <>
-    <div className="header">
+    <div className="header" >
         <div className="bg-black">
             <div className="black-space"></div>
             <img src="real-02.svg" className="real-image"/>
@@ -55,7 +55,7 @@ const Header = () => {
         </g>
       </svg>
     </div>
-    <p className='font-vegawanty text-center text-xl'></p>
+    <p className='font-vegawanty text-center text-xl'id="about"></p>
       <Subtitle subtitleText={textSubtitle}/>
     </>
   );
