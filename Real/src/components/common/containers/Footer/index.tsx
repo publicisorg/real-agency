@@ -1,7 +1,7 @@
 import React from 'react'
-import {
-  FaInstagramSquare, FaTwitterSquare
-} from 'react-icons/Fa'
+// import {
+//   FaInstagramSquare, FaTwitterSquare
+// } from 'react-icons/Fa'
 
 const Footers = () => {
   return (
@@ -23,10 +23,10 @@ Argentina </p>
 " className='text-white'>holalreal@realagency.com.ar
 </a></p>
       </div>
-      <div className="w-1/2 flex basis-4">
+      {/* <div className="w-1/2 flex basis-4">
       <a
                  className="text-3xl pt-2 block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-white hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-                  href="https://www.instagram.com/renaultarg/?hl=es"
+                  href="#"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
@@ -34,13 +34,13 @@ Argentina </p>
                 </a>
                 <a
                   className="text-3xl mx-3 pt-2 block py-2 pr-4 pl-3 md:p-0 border-b border-gray-100  text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:border-0 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:bg-transparent md:dark:hover:text-white"
-                  href="https://twitter.com/RenaultArg"
+                  href="#"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   <FaTwitterSquare />
                 </a>
-      </div>
+      </div> */}
     
    
       </footer>

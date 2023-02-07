@@ -6,7 +6,7 @@ const reel = () => {
   }
 
   const reelhtml = (
-    <div className="reel">
+    <div className="reel" id="reel">
         <div className="reel-container">
             <video className="reel-video" src={video} autoPlay muted loop/>
             <div className="reel-title">
