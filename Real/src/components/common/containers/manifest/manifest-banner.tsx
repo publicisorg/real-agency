@@ -29,8 +29,8 @@ const manifestbanner = () => {
     }, []);
 
     useEffect(() => {
-      if (scrollPosition > y) {
-        setScrollPosition(y);
+      if (scrollPosition > (y -100)) {
+        setScrollPosition(y -100);
       }
     });
 
