@@ -5,7 +5,7 @@ const title = (props) => {
     function titlehtml(props) {
         return (
             <>
-                <h1 class="text-center my-5 font-zector">
+                <h1 className="text-center my-5 font-zector">
                     {props.titleText}
                 </h1>
             </>

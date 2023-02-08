@@ -1,0 +1,29 @@
+#fpsstats {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: red;
+  z-index: 9999;
+}
+#tv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 1);
+  -moz-transform: translate3d(0, 0, 1);
+  transform: translate3d(0, 0, 1);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  image-rendering: optimizeSpeed;
+  /* Older versions of FF          */
+  image-rendering: -moz-crisp-edges;
+  /* FF 6.0+                       */
+  image-rendering: -webkit-optimize-contrast;
+  /* Safari                        */
+  image-rendering: -o-crisp-edges;
+  /* OS X & Windows Opera (12.02+) */
+  image-rendering: pixelated;
+  /* Awesome future-browsers       */
+  -ms-interpolation-mode: nearest-neighbor;
+  /* IE                            */
+}
