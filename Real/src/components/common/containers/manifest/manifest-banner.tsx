@@ -7,6 +7,9 @@ import { useEffect, useState, useRef } from 'react'
 const manifestbanner = () => {
     const boxRef = useRef<HTMLDivElement>(null);
     const [y, setY] = useState<number | undefined>();
+    const [auxPercentage, setAuxPercentage] = useState<number | undefined>();
+    const [effectPercentage, setPercentage] = useState<number | undefined>();
+    const [effectInvertedPercentage, setInvertedPercentage] = useState<number | undefined>();
     const getPosition = () => {
       const y = boxRef.current?.offsetTop;
       setY(y);
@@ -29,15 +32,22 @@ const manifestbanner = () => {
     }, []);
 
     useEffect(() => {
-      if (scrollPosition > (y -100)) {
-        setScrollPosition(y -100);
+      setAuxPercentage(((scrollPosition + 500 ) * 100) / y);
+      if (auxPercentage > 100) {
+        setPercentage(100);
+        setInvertedPercentage(0);
+      } else {
+        setPercentage(auxPercentage);
+        setInvertedPercentage(100 - effectPercentage);
       }
+
+      console.log(effectPercentage + " | " + effectInvertedPercentage);
     });
 
     return (
         <>
         <div className="text-center relative" ref={boxRef} style={{
-          transform: `translate(calc(${y}px - ${scrollPosition}px - 100px)) scale(calc(0.5 + calc(${scrollPosition} * 0.0005)))`
+          transform: `translate(${effectInvertedPercentage}%) scale(${effectPercentage}%)`
         }}>
             <img src={image} className="mx-auto my-8 rounded-3xl"/>
             <NoiseAnimation />
