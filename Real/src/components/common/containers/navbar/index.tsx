@@ -11,16 +11,16 @@ const Menu = () => {
       <div className="w-full md:block md:w-auto hidden">
         <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
           <li>
-            <a className="block py-2 text-xl text-white md:hover:text-gray-500" href="#">ABOUT</a>
+            <a className="block py-2 text-xl text-white md:hover:text-gray-500" href="#about">ABOUT</a>
           </li>
           <li>
-            <a  className="block py-2 text-xl text-white md:hover:text-gray-500"  href="#">REEL</a>
+            <a  className="block py-2 text-xl text-white md:hover:text-gray-500"  href="#reel">REEL</a>
 
             </li>
             <li>
-              <a  className="block py-2 text-xl text-white md:hover:text-gray-500" href="#"  >WORK</a>
+              <a  className="block py-2 text-xl text-white md:hover:text-gray-500" href="#work"  >WORK</a>
               </li>
-                <a className="block py-2 text-xl text-white md:hover:text-gray-500"  href="#">Contact</a>
+                <a className="block py-2 text-xl text-white md:hover:text-gray-500"  href="#contact">Contact</a>
                 <li><a className="block py-2 text-xl text-white md:hover:text-gray-500" href="/navbars">ES</a></li>
               </ul>
             </div>
