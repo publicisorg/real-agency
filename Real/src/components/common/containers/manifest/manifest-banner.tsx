@@ -40,8 +40,6 @@ const manifestbanner = () => {
         setPercentage(auxPercentage);
         setInvertedPercentage(100 - effectPercentage);
       }
-
-      console.log(effectPercentage + " | " + effectInvertedPercentage);
     });
 
     return (

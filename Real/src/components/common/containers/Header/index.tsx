@@ -18,14 +18,14 @@ const Header = () => {
 
   const headerhtml = (
     <>
-    <div className="header" >
-        <div className="bg-black">
+    <div className="relative overflow-hidden md:h-96" >
+        <div className="bg-black-custom">
             <div className="black-space"></div>
-            <img src="real-02.svg" className="real-image"/>
+            <img src="real-02.svg" className="real-image bg-white md:bg-transparent"/>
             <div className="black-space"></div>
         </div>
           
-          <iframe className="yt-video-real" 
+        <iframe className="yt-video-real" 
         width="100%" height="100%"
         src="https://www.youtube.com/embed/s-rhii6znMU?autoplay=1&controls=0&mute=1&loop=1&version=3&vq=hd1080">
         </iframe>
