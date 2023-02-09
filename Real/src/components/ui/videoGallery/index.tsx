@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Modal from './Modal'
 
 const videoGallery = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -20,7 +21,7 @@ const videoGallery = () => {
         {
           name: "video2",
           description: "",
-          youtube: "https://www.youtube.com/embed/dicnld63dsY?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
+          youtube: "8uYBLU9gco8",
           image: "http://www.arcww.com.ar/assets/works/1.png",
         },
         {
@@ -92,29 +93,9 @@ const videoGallery = () => {
                         >
 
                         </div>
-                        <div className="modal-gallery-wrapper fixed top-0 right-0 left-0 z-99 h-modal overflow-y-auto overflow-x-hidden md:inset-0 md:h-full items-center justify-center flex bg-gray-900 bg-opacity-50 dark:bg-opacity-80" onClick={() => {
-                          setOpenModal(!openModal)
-                        } }>
-                          <div className="relative h-full w-full p-4 md:h-auto max-w-3xl">
-                            <div className="relative rounded-lg bg-white shadow dark:bg-transparent">
-                              <div className="flex items-start justify-between rounded-t dark:border-black border-b p-5">
-                                <h3 className="text-xl font-medium text-gray-900 dark:text-white">Mercedes Benz</h3>
-                                <button aria-label="Close" onClick={() => {
-                                  setOpenModal(!openModal)
-                                } } className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white" type="button">
-                                  <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-                                </button>
-                              </div>
-                              <div className="p-2">
-                                <div className="space-y-6">
-                                  <iframe id="6cdN7N8ntcY" className="playerLocation ytvideo" width="100%" height="400" src={item.youtube}></iframe>
+                        {openModal && (<Modal isOpen={open} onClose={onclose} data={item.youtube} />)}
 
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>
+                       
                       </div>
                     </div></>
                 );
