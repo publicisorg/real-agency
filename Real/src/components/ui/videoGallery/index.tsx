@@ -18,6 +18,7 @@ const videoGallery = () => {
           youtube: "https://www.youtube.com/embed/dicnld63dsY?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "http://www.arcww.com.ar/assets/works/0b704d5a-09dc-42a0-a9e5-ae4a347b16dd.jpeg",
         },
+
         {
           name: "video2",
           description: "",
@@ -83,29 +84,30 @@ const videoGallery = () => {
                         <img src={item.image} alt="" className="w-max" onClick={handleOpenModal} />
                       </div>
                     </div>
-                  </div><div className={`${openModal === true ? 'block' : 'hidden'} modal-terms`}>
-                      <div className="modal-terms-content">
-                        <div
-                          className="closeModal"
-                          onClick={() => {
-                            setOpenModal(!openModal)
-                          } }
-                        >
-
-                        </div>
-                        {openModal && (<Modal isOpen={open} onClose={onclose} data={item.youtube} />)}
-
-                       
-                      </div>
-                    </div></>
+                  </div></>
                 );
               })}
 
             </div>
           );
         })}
+        {/* <div className={`${openModal === true ? 'block' : 'hidden'} modal-terms`}>
+          <div className="modal-terms-content">
+            <div
+              className="closeModal"
+              onClick={() => {
+                setOpenModal(!openModal)
+              }}
+            >
+
+            </div>
+            {openModal && (<Modal isOpen={open} onClose={onclose} data={item.youtube} />)}
+
+
+          </div>
+        </div> */}
       </div>
-      
+
     </div>
   )
 }

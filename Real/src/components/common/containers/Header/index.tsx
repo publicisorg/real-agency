@@ -18,7 +18,7 @@ const Header = () => {
 
   const headerhtml = (
     <>
-    <div className="relative overflow-hidden md:h-96" >
+    <div className="relative overflow-hidden md:h-96 my-[116px]" >
         <div className="bg-black-custom">
             <div className="black-space"></div>
             <img src="real-02.svg" className="real-image bg-white md:bg-transparent"/>

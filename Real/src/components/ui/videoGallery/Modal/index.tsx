@@ -1,5 +1,5 @@
 
-function Modal(props) {
+function Modal(props: { isOpen: any; onClose: any; data: string | undefined; }) {
 
   function setOpenModal(onClose: any) {
     throw new Error("Function not implemented.")
