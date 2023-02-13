@@ -1,7 +1,6 @@
 
 import { Button, Navbar } from 'flowbite-react'
 import './App.css'
-import 'animate.css'
 import Header from './components/common/containers/Header'
 import Menu from './components/common/containers/navbar'
 import realLogo from './assets/logoReal.svg'
