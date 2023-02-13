@@ -1,6 +1,9 @@
 import '../../../../styles/header/header.css';
 import Subtitle from '../../subtitle';
 import Title from '../../title';
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useEffect } from "react";
 
 const textSubtitle = `Our daily work, our core, \n
 what we stand for moves us for a continuous search \n
@@ -12,11 +15,25 @@ we make them.`;
 
 const textTitle = "Shaping true connections";
 
-const Header = () => {
-    return headerhtml;
+function Header() {
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  const boxVariant = {
+      visible: { opacity: 1, scale: 1 },
+      hidden: { opacity: 0, scale: 0 }, 
   }
 
-  const headerhtml = (
+  useEffect(() => {
+      if (inView) {
+          control.start('visible');
+      } else {
+          control.start("hidden");
+      }
+  }, [control, inView]);
+
+    return (
     <>
     <div className="relative overflow-hidden md:h-96 my-[116px] 2xl:h-[50vh]" >
         <div className="bg-black-custom">
@@ -31,7 +48,7 @@ const Header = () => {
         </iframe>
     </div>
     <Title titleText={textTitle}/>
-    <div className="text-center my-5">
+    <motion.div ref={ref} variants={boxVariant} animate={control} initial="hidden" className="text-center my-5">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         viewBox="0 0 67.66 65.04" className='logoR'>
 
@@ -54,11 +71,12 @@ const Header = () => {
           </g>
         </g>
       </svg>
-    </div>
-    <p className='font-vegawanty text-center text-xl'id="about"></p>
+    </motion.div>
+    <motion.p ref={ref} variants={boxVariant} animate={control} initial="hidden" className='font-vegawanty text-center text-xl'id="about"></motion.p>
       <Subtitle subtitleText={textSubtitle}/>
     </>
-  );
+    );
+  };
   
   export default Header
   
