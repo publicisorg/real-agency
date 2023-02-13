@@ -32,7 +32,7 @@ const manifestbanner = () => {
     }, []);
 
     useEffect(() => {
-      setAuxPercentage(((scrollPosition + 500 ) * 100) / y);
+      setAuxPercentage(((scrollPosition + 300 ) * 100) / y);
       if (auxPercentage > 100) {
         setPercentage(100);
         setInvertedPercentage(0);
