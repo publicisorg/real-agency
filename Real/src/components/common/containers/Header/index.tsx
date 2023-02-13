@@ -21,8 +21,8 @@ function Header() {
   const [ref, inView] = useInView();
 
   const boxVariant = {
-      visible: { opacity: 1, scale: 1 },
-      hidden: { opacity: 0, scale: 0 }, 
+      visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 1 } },
+      hidden: { opacity: 0, scale: 0, rotate: 360 }, 
   }
 
   useEffect(() => {
@@ -48,8 +48,8 @@ function Header() {
         </iframe>
     </div>
     <Title titleText={textTitle}/>
-    <motion.div ref={ref} variants={boxVariant} animate={control} initial="hidden" className="text-center my-5">
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+    <div className="text-center my-5">
+      <motion.svg ref={ref} variants={boxVariant} animate={control} initial="hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         viewBox="0 0 67.66 65.04" className='logoR'>
 
         <g id="Capa_2">
@@ -70,8 +70,8 @@ function Header() {
             </g>
           </g>
         </g>
-      </svg>
-    </motion.div>
+      </motion.svg>
+    </div>
     <motion.p ref={ref} variants={boxVariant} animate={control} initial="hidden" className='font-vegawanty text-center text-xl'id="about"></motion.p>
       <Subtitle subtitleText={textSubtitle}/>
     </>
