@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Modal from './Modal'
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
 
 const videoGallery = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -9,22 +7,6 @@ const videoGallery = () => {
   const handleOpenModal = () => {
     setOpenModal(!openModal)
   }
-
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-  
-  const boxVariant = {
-      visible: { opacity: 1, y:0, transition: { duration: 0.5 } },
-      hidden: { opacity: 0, y:-100 }, 
-  }
-  
-  useEffect(() => {
-      if (inView) {
-          control.start('visible');
-      } else {
-          control.start("hidden");
-      }
-  }, [control, inView]);
 
   const gallery = [
     {
@@ -96,13 +78,13 @@ const videoGallery = () => {
             <div className="border h-9/12  rounded-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" key={index}>
               {item.subcategories.map((item, index) => {
                 return (
-                  <><motion.div ref={ref} variants={boxVariant} animate={control} initial="hidden" key={index} className="overflow-hidden 2xl:h-64 xl:h-48 lg:h-40 md:h-28 sm:h-40 h-60 justify-center">
+                  <><div key={index} className="overflow-hidden 2xl:h-64 xl:h-48 lg:h-40 md:h-28 sm:h-40 h-48 justify-center">
                     <div className="flex">
                       <div className="rounded relative">
                         <img src={item.image} alt="" className="w-max" onClick={handleOpenModal} />
                       </div>
                     </div>
-                  </motion.div></>
+                  </div></>
                 );
               })}
 
