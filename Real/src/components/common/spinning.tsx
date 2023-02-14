@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 
-function spinning(props) {
+function spinning(props: any) {
 
     const control = useAnimation();
     const [ref, inView] = useInView();

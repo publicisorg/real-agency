@@ -2,11 +2,11 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-const subtitle = (props) => {
+const subtitle = (props: any) => {
     return subtitlehtml(props);
   }
 
-    function subtitlehtml(props) {
+    function subtitlehtml(props: any) {
 
     const control = useAnimation();
     const [ref, inView] = useInView();

@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 
-    function title(props) {
+    function title(props: any) {
 
             const control = useAnimation();
             const [ref, inView] = useInView();

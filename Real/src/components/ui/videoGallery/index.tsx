@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Modal from './Modal'
 
 const videoGallery = () => {
@@ -78,9 +78,9 @@ const videoGallery = () => {
             <div className="border h-9/12  rounded-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" key={index}>
               {item.subcategories.map((item, index) => {
                 return (
-                  <><div key={index} className="overflow-hidden 2xl:h-64 xl:h-48 lg:h-40 md:h-28 sm:h-40 h-48 justify-center">
+                  <><div key={index} className="overflow-hidden 2xl:h-64 xl:h-48 lg:h-40 md:h-28 sm:h-40 h-60 justify-center">
                     <div className="flex">
-                      <div className="rounded relative">
+                      <div className="rounded">
                         <img src={item.image} alt="" className="w-max" onClick={handleOpenModal} />
                       </div>
                     </div>
