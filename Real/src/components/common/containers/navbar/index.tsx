@@ -12,17 +12,17 @@ const Menu = () => {
       <div className="w-full md:block md:w-auto hidden">
         <ul className="mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium">
           <li>
-            <Link className="block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="about">ABOUT</Link>
+            <Link className="duration-300 block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="about">ABOUT</Link>
           </li>
           <li>
-          <Link className="block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="reel">REEL</Link>
+          <Link className="duration-300 block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="reel">REEL</Link>
 
             </li>
             <li>
-            <Link className="block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="work">WORK</Link>
+            <Link className="duration-300 block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="work">WORK</Link>
               </li>
-              <Link className="block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="c">Contact</Link>
-                <li><a className="block py-2 text-xl text-white md:hover:text-gray-500" href="/navbars">ES</a></li>
+              <Link className=" duration-300 block py-2 text-xl text-white md:hover:text-gray-500" activeClass="active" smooth spy to="c">Contact</Link>
+                <li><a className="duration-300 block py-2 text-xl text-white md:hover:text-gray-500" href="/navbars">ES</a></li>
               </ul>
             </div>
           </div>

@@ -6,13 +6,18 @@ import { useEffect, useState, useRef } from 'react'
 
 const manifestbanner = () => {
     const boxRef = useRef<HTMLDivElement>(null);
-    const [y, setY] = useState<number | undefined>();
-    const [auxPercentage, setAuxPercentage] = useState<number | undefined>();
-    const [effectPercentage, setPercentage] = useState<number | undefined>();
-    const [effectInvertedPercentage, setInvertedPercentage] = useState<number | undefined>();
+    const [y, setY] = useState(0);
+    const [auxPercentage, setAuxPercentage] = useState(0);
+    const [effectPercentage, setPercentage] = useState(0);
+    const [effectInvertedPercentage, setInvertedPercentage] = useState(0);
+
     const getPosition = () => {
       const y = boxRef.current?.offsetTop;
-      setY(y);
+      if (y == undefined) {
+        setY(0);
+      } else {
+        setY(y);
+      }
     }
 
     const [scrollPosition, setScrollPosition] = useState(0);

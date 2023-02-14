@@ -11,3 +11,4 @@
 .animate-spin {
     animation: spin 15s linear infinite;
 }
+.overlay {display: none;}
