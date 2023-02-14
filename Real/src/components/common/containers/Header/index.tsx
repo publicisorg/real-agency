@@ -42,7 +42,7 @@ function Header() {
             <div className="black-space"></div>
         </div>
           
-        <iframe className="yt-video-real" 
+        <iframe className="yt-video-real hidden md:block" 
         width="100%" height="100%"
         src="https://www.youtube.com/embed/s-rhii6znMU?autoplay=1&controls=0&mute=1&loop=1&version=3&vq=hd1080">
         </iframe>
