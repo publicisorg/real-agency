@@ -3,7 +3,7 @@ import Subtitle from '../../subtitle';
 import Title from '../../title';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const textSubtitle = `Our daily work, our core, \n
 what we stand for moves us for a continuous search \n
@@ -19,6 +19,7 @@ function Header() {
 
   const control = useAnimation();
   const [ref, inView] = useInView();
+  const [showIframe, setIframe] = useState<boolean>(false);
 
   const boxVariant = {
       visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 1 } },
@@ -32,6 +33,10 @@ function Header() {
           control.start("hidden");
       }
   }, [control, inView]);
+  
+  useEffect(() => {
+    setIframe(true);
+  }, []);
 
     return (
     <>
@@ -41,11 +46,13 @@ function Header() {
             <img src="real-02.svg" className="real-image bg-white md:bg-transparent"/>
             <div className="black-space"></div>
         </div>
-          
-        <iframe className="yt-video-real hidden md:block" 
-        width="100%" height="100%"
-        src="https://www.youtube.com/embed/s-rhii6znMU?autoplay=1&controls=0&mute=1&loop=1&version=3&vq=hd1080">
-        </iframe>
+          { showIframe &&
+            <iframe className="yt-video-real hidden md:block" 
+            width="100%" height="100%"
+            src="https://www.youtube.com/embed/s-rhii6znMU?autoplay=1&controls=0&mute=1&loop=1&version=3&vq=hd1080">
+            </iframe>
+          }
+        
     </div>
     <Title titleText={textTitle}/>
     <div className="text-center my-5">
