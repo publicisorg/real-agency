@@ -8,7 +8,7 @@ const videoGallery = () => {
   const [galleryURL, setModalURL] = useState("");
   const [galleryDesc, setModalDesc] = useState("");
 
-  const handleOpenModal = (name: string, yturl: string, desc: string, id: string) => {
+  const handleOpenModal = (name: string, yturl: string, desc: string) => {
     setModalURL(yturl);
     setModalIdentifier(name);
     setModalDesc(desc);
@@ -115,7 +115,7 @@ const videoGallery = () => {
 
             </div>
             <AnimatePresence>
-              {openModal && (<Modal id={galleryId} isOpen={open} onClose={setOpenModal} data={galleryURL} name={galleryId} description={galleryDesc}/>)}
+              {openModal && (<Modal isOpen={open} onClose={setOpenModal} data={galleryURL} name={galleryId} description={galleryDesc}/>)}
             </AnimatePresence>
 
 
