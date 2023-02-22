@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Modal from './Modal'
+import { AnimatePresence, motion, useAnimation } from "framer-motion";
 
 const videoGallery = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -7,11 +8,16 @@ const videoGallery = () => {
   const [galleryURL, setModalURL] = useState("");
   const [galleryDesc, setModalDesc] = useState("");
 
-  const handleOpenModal = (name: string, yturl: string, desc: string) => {
+  const handleOpenModal = (name: string, yturl: string, desc: string, id: string) => {
     setModalURL(yturl);
     setModalIdentifier(name);
     setModalDesc(desc);
     setOpenModal(!openModal);
+  }
+
+  const galleryAnim = {
+    rest: {opacity: 1, scale: 1, transition: { duration: 0.25 }},
+    hover: {scale: 1.07, transition: { type: "spring", stiffness: 360, damping: 13 }},
   }
 
   const gallery = [
@@ -84,13 +90,13 @@ const videoGallery = () => {
             <div className="border h-9/12  rounded-sm grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6" key={index}>
               {item.subcategories.map((item, index) => {
                 return (
-                  <><div key={index} className="overflow-hidden 2xl:h-64 xl:h-48 lg:h-40 md:h-28 sm:h-40 h-60 justify-center">
+                  <><motion.div variants={galleryAnim} initial="rest" whileHover="hover" key={index} layoutId={item.name} className="overflow-hidden 2xl:h-64 xl:h-48 lg:h-40 md:h-28 sm:h-40 h-60 justify-center">
                     <div className="flex">
                       <div className="rounded">
-                        <img src={item.image} id={item.name} alt="" className="w-max" onClick={() => handleOpenModal(item.name, item.youtube, item.description)} />
+                        <motion.img  src={item.image} id={item.name} alt="" className="w-max" onClick={() => handleOpenModal(item.name, item.youtube, item.description)} />
                       </div>
                     </div>
-                  </div>
+                  </motion.div>
                   </>
                 );
               })}
@@ -108,7 +114,9 @@ const videoGallery = () => {
             >
 
             </div>
-            {openModal && (<Modal isOpen={open} onClose={setOpenModal} data={galleryURL} name={galleryId} description={galleryDesc}/>)}
+            <AnimatePresence>
+              {openModal && (<Modal id={galleryId} isOpen={open} onClose={setOpenModal} data={galleryURL} name={galleryId} description={galleryDesc}/>)}
+            </AnimatePresence>
 
 
           </div>
