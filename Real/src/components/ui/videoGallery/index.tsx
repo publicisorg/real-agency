@@ -3,9 +3,15 @@ import Modal from './Modal'
 
 const videoGallery = () => {
   const [openModal, setOpenModal] = useState(false)
+  const [galleryId, setModalIdentifier] = useState("");
+  const [galleryURL, setModalURL] = useState("");
+  const [galleryDesc, setModalDesc] = useState("");
 
-  const handleOpenModal = () => {
-    setOpenModal(!openModal)
+  const handleOpenModal = (name: string, yturl: string, desc: string) => {
+    setModalURL(yturl);
+    setModalIdentifier(name);
+    setModalDesc(desc);
+    setOpenModal(!openModal);
   }
 
   const gallery = [
@@ -13,16 +19,16 @@ const videoGallery = () => {
       type: "gallery",
       subcategories: [
         {
-          name: "video1",
+          name: "Mercedes Benz",
           description: "",
           youtube: "https://www.youtube.com/embed/dicnld63dsY?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/mercedez.jpeg",
         },
 
         {
-          name: "video2",
+          name: "Rugby",
           description: "",
-          youtube: "8uYBLU9gco8",
+          youtube: "https://www.youtube.com/embed/mTkqNwDXsQI",
           image: "gallery/rugby.png",
         },
         {
@@ -81,17 +87,18 @@ const videoGallery = () => {
                   <><div key={index} className="overflow-hidden 2xl:h-64 xl:h-48 lg:h-40 md:h-28 sm:h-40 h-60 justify-center">
                     <div className="flex">
                       <div className="rounded">
-                        <img src={item.image} alt="" className="w-max" onClick={handleOpenModal} />
+                        <img src={item.image} id={item.name} alt="" className="w-max" onClick={() => handleOpenModal(item.name, item.youtube, item.description)} />
                       </div>
                     </div>
-                  </div></>
+                  </div>
+                  </>
                 );
               })}
 
             </div>
           );
         })}
-        {/* <div className={`${openModal === true ? 'block' : 'hidden'} modal-terms`}>
+        <div className={`${openModal === true ? 'block' : 'hidden'} modal-terms`}>
           <div className="modal-terms-content">
             <div
               className="closeModal"
@@ -101,11 +108,11 @@ const videoGallery = () => {
             >
 
             </div>
-            {openModal && (<Modal isOpen={open} onClose={onclose} data={item.youtube} />)}
+            {openModal && (<Modal isOpen={open} onClose={setOpenModal} data={galleryURL} name={galleryId} description={galleryDesc}/>)}
 
 
           </div>
-        </div> */}
+        </div>
       </div>
 
     </div>
