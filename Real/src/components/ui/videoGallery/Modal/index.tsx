@@ -6,13 +6,14 @@ function Modal(props: { isOpen: any; onClose: any; data: string | undefined; nam
   const openAnims = {
     hidden: {opacity: 0, transition: { duration: 0.5 }},
     visible: {opacity: 1, transition: { type: "spring", stiffness: 200, damping: 20, delay: 0.4 }},
+    visiblebg: {opacity: 1, transition: { duration: 0.25 }},
   }
 
   function setOpenModal(onClose: any) {
     throw new Error("Function not implemented.")
   }
 
-    return  <motion.div layoutId={props.name} className="z-[51] modal-gallery-wrapper fixed top-0 right-0 left-0 z-99 h-modal overflow-y-auto overflow-x-hidden md:inset-0 md:h-full items-center justify-center flex bg-gray-900 bg-opacity-50 dark:bg-opacity-80" onClick={() => {
+    return  <motion.div layoutId={props.name} variants={openAnims} initial="hidden" animate="visiblebg" className="z-50 modal-gallery-wrapper fixed top-0 right-0 left-0 z-99 h-modal overflow-y-auto overflow-x-hidden md:inset-0 md:h-full items-center justify-center flex bg-gray-900 bg-opacity-50 dark:bg-opacity-80" onClick={() => {
       setOpenModal(props.isOpen)
     } }>
       <div className="relative h-full w-full p-4 md:h-auto max-w-3xl ">
