@@ -52,8 +52,8 @@ const manifestbanner = () => {
         <div className="text-center relative" ref={boxRef} style={{
           transform: `translate(${effectInvertedPercentage}%) scale(${effectPercentage}%)`
         }}>
-            <video src={video} className="mx-auto my-8 rounded-3xl" controls autoPlay loop>
-              <source type="video/mp4" src={video}/>
+            <video src="https://desarrollodesitios0.site/real/manifest-eng.mp4" className="mx-auto my-8 rounded-3xl"  controls autoPlay loop>
+              <source type="video/mp4" src="https://desarrollodesitios0.site/real/manifest-eng.mp4"/>
               Your browser does not support the video tag
             </video>
             <NoiseAnimation />
