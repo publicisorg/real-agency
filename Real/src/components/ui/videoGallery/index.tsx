@@ -19,62 +19,62 @@ const videoGallery = () => {
     rest: {opacity: 1, scale: 1, transition: { duration: 0.25 }},
     hover: {scale: 1.07, transition: { type: "spring", stiffness: 360, damping: 13 }},
   }
- 
+
   const gallery = [
     {
       type: "gallery",
       subcategories: [
         {
-          name: "Mercedes Benz",
+          name: "1",
           description: "",
           youtube: "https://www.youtube.com/embed/dicnld63dsY?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/mercedez.jpeg",
         },
 
         {
-          name: "Visa",
+          name: "2",
           description: "",
           youtube: "https://www.youtube.com/embed/lJPiU-s4oiI",
           image: "gallery/rugby.png",
         },
         {
-          name: "Visa",
+          name: "3",
           description: "",
           youtube: "https://www.youtube.com/embed/gMNNago-pXI?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/models.jpeg",
         },
         {
-          name: "Mercedes Benz",
+          name: "4",
           description: "",
           youtube: "https://www.youtube.com/embed/oJeFz4KZfU8?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/forever.png",
         },
         {
-          name: "video5",
+          name: "5",
           description: "",
           youtube: "https://www.youtube.com/embed/6cdN7N8ntcY?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/mercedes2.jpeg",
         },
         {
-          name: "Visa",
+          name: "6",
           description: "",
           youtube: "https://www.youtube.com/embed/0-SaD3Lxae4?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/golf.jpeg",
         },
         {
-          name: "Visa",
+          name: "7",
           description: "",
           youtube: "https://www.youtube.com/embed/8uYBLU9gco8?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/visa.png",
         },
         {
-          name: "Flybondi",
+          name: "8",
           description: "",
           youtube: "https://www.youtube.com/embed/bV7ignLwBOo?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/flybondi.png",
         },
         {
-          name: "Vogue",
+          name: "9",
           description: "",
           youtube: "https://www.youtube.com/embed/lxap1sVIrAk?rel=0&showinfo=0&mute=1&muted=1&enablejsapi=1",
           image: "gallery/vogue.jpeg",

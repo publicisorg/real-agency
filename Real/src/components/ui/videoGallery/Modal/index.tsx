@@ -19,7 +19,7 @@ function Modal(props: { isOpen: any; onClose: any; data: string | undefined; nam
       <div className="relative h-full w-full p-4 md:h-auto max-w-3xl ">
         <div className="relative rounded-lg bg-white shadow dark:bg-black pb-4 pt-2 px-4">
           <div className="flex items-start justify-between rounded-t p-5">
-            <motion.h3 variants={openAnims} initial="hidden" animate="visible" className="text-xl font-medium text-gray-900 dark:text-white">{props.name}</motion.h3>
+            {/*<motion.h3 variants={openAnims} initial="hidden" animate="visible" className="text-xl font-medium text-gray-900 dark:text-white">{props.name}</motion.h3>*/}
             <motion.button variants={openAnims} initial="hidden" animate="visible" aria-label="Close" onClick={() => {
               props.onClose()
             } } className="ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 dark:hover:bg-gray-600 dark:hover:text-white" type="button">
