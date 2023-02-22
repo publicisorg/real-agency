@@ -19,7 +19,7 @@ const videoGallery = () => {
     rest: {opacity: 1, scale: 1, transition: { duration: 0.25 }},
     hover: {scale: 1.07, transition: { type: "spring", stiffness: 360, damping: 13 }},
   }
-
+ 
   const gallery = [
     {
       type: "gallery",

@@ -10,7 +10,7 @@ function Modal(props: { isOpen: any; onClose: any; data: string | undefined; nam
   }
 
   function setOpenModal(onClose: any) {
-    throw new Error("Function not implemented.")
+    throw new Error("Function not implemented.") 
   }
 
     return  <motion.div layoutId={props.name} variants={openAnims} initial="hidden" animate="visiblebg" className="z-50 modal-gallery-wrapper fixed top-0 right-0 left-0 z-99 h-modal overflow-y-auto overflow-x-hidden md:inset-0 md:h-full items-center justify-center flex bg-gray-900 bg-opacity-50 dark:bg-opacity-80" onClick={() => {
