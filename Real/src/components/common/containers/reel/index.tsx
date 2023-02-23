@@ -26,9 +26,9 @@ function reel() {
     <motion.div ref={ref} variants={boxVariant} animate={control} initial="hidden" className="reel" id="reel">
         <div className="reel-container">
             <video className="reel-video" src={video} autoPlay muted loop/>
-            <div className="reel-title">
+            {/*<div className="reel-title">
                 <h3>Reel</h3>
-            </div>
+            </div>*/}
         </div>
     </motion.div>);
 };
