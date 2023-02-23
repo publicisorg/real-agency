@@ -1,5 +1,6 @@
 
 import Marquee from "react-fast-marquee";
+import React from 'react';
 
 const Marquecina = () => (
   <div className="py-9">

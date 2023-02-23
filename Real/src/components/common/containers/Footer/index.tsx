@@ -1,6 +1,6 @@
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 // import {
 //   FaInstagramSquare, FaTwitterSquare
 // } from 'react-icons/Fa'
@@ -60,8 +60,8 @@ const Footers = () => {
         <p>
           <a href="mailto:holalreal@realagency.com.ar" className='text-white'>
             holalreal@realagency.com.ar
-            </a>
-          </p>
+          </a>
+        </p>
       </motion.div>
       {/* <div className="w-1/2 flex basis-4">
       <a

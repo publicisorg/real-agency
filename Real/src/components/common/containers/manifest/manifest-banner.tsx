@@ -2,7 +2,7 @@ import '../../../../styles/manifest/manifest.css';
 import video from '../../../../../public/manifest-eng.mp4'
 import SpinningPublicis from '../../spinning-publicis'
 import NoiseAnimation from '../../noise-animation';
-import { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 
 const manifestbanner = () => {
     const boxRef = useRef<HTMLDivElement>(null);

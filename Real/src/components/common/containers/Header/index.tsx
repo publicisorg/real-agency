@@ -3,7 +3,7 @@ import Subtitle from '../../subtitle';
 import Title from '../../title';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const textSubtitle = `Our daily work, our core, \n
 what we stand for moves us for a continuous search \n

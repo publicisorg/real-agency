@@ -2,7 +2,7 @@ import '../../../../styles/reel/reel.css';
 import video from '../../../../../public/reel.mp4';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 function reel() {
 
