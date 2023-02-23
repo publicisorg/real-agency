@@ -4,6 +4,7 @@
 
 #root{
     width: 100%;
+    overflow-x: hidden;
 }
 .cls-1{letter-spacing:-.08em}.cls-6,.cls-7{fill:#fff}.cls-7{font-family:Vegawanty-Regular,Vegawanty;font-size:32.72px}
 

@@ -33,8 +33,8 @@ const manifest = () => {
           <line className="cls-1" x1="0" y1="11.57" x2="23.15" y2="11.57"/>
         </svg>
       </div>
-      <Title titleText="Services"/>
-      <div className="flex flex-col sm:flex-row justify-between items-center w-10/12 max-w-4xl mx-auto my-12">
+      <Title titleText="THE REAL THING"/>
+      <div className="flex flex-col sm:flex-row justify-between items-center w-10/12 max-w-4xl mx-auto my-12 wow bounceInUp">
         <Spinning insideText={spin1}/>
         <Spinning insideText={spin2}/>
         <Spinning insideText={spin3}/>

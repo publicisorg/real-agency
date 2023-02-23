@@ -10,8 +10,8 @@ what we stand for moves us for a continuous search \n
  on unleashing creative value for brands. \n
 Conneting strategies, ideas & people through \n
 storytelling and cutting edge experiences. \n
-We make things happen, tangible, shareable. \n
-we make them.`;
+We make things happen, tangible, shareable... \n
+we make them REAL`;
 
 const textTitle = "Shaping true connections";
 
@@ -41,7 +41,7 @@ function Header() {
     return (
     <>
     <div className="relative overflow-hidden md:h-96 my-[116px] 2xl:h-[50vh]" >
-        <div className="bg-black-custom">
+        <div className="bg-black-custom z-50">
             <div className="black-space"></div>
             <img src="real-02.svg" className="real-image bg-white md:bg-transparent"/>
             <div className="black-space"></div>
@@ -49,7 +49,7 @@ function Header() {
           { showIframe &&
             <iframe className="yt-video-real hidden md:block" 
             width="100%" height="100%"
-            src="https://www.youtube.com/embed/s-rhii6znMU?autoplay=1&controls=0&mute=1&loop=1&version=3&vq=hd1080">
+            src="https://www.youtube.com/embed/cH7VBI4QQzA?autoplay=1&controls=0&mute=1&loop=1&version=3&vq=hd1080">
             </iframe>
           }
         

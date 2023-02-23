@@ -29,8 +29,8 @@ function NoiseCanvas() {
         }
     }, []);
     return (
-        <canvas id="tv" className="w-full h-full rounded-3xl" style={{
-            opacity: `calc(2 - calc(${scrollPosition} * 0.003)`
+        <canvas id="tv" className="w-full h-full rounded-3xl pointer-events-none" style={{
+            opacity: `calc(2.2 - calc(${scrollPosition} * 0.003)`
         }}></canvas>
     );
 }

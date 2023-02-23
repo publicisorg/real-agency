@@ -1,5 +1,5 @@
 import '../../../../styles/manifest/manifest.css';
-import image from '../../../../../public/manifest.png'
+import video from '../../../../../public/manifest-eng.mp4'
 import SpinningPublicis from '../../spinning-publicis'
 import NoiseAnimation from '../../noise-animation';
 import { useEffect, useState, useRef } from 'react'
@@ -37,7 +37,7 @@ const manifestbanner = () => {
     }, []);
 
     useEffect(() => {
-      setAuxPercentage(((scrollPosition + 500 ) * 100) / y);
+      setAuxPercentage(((scrollPosition + 400 ) * 100) / y);
       if (auxPercentage > 100) {
         setPercentage(100);
         setInvertedPercentage(0);
@@ -52,11 +52,14 @@ const manifestbanner = () => {
         <div className="text-center relative" ref={boxRef} style={{
           transform: `translate(${effectInvertedPercentage}%) scale(${effectPercentage}%)`
         }}>
-            <img src={image} className="mx-auto my-8 rounded-3xl"/>
+            <video src="https://desarrollodesitios0.site/real/manifest-eng.mp4" className="mx-auto my-8 rounded-3xl"  controls autoPlay loop>
+              <source type="video/mp4" src="https://desarrollodesitios0.site/real/manifest-eng.mp4"/>
+              Your browser does not support the video tag
+            </video>
             <NoiseAnimation />
-            <div id="manifest-text" className="absolute inset-0 flex items-center justify-center">
+            {/*<div id="manifest-text" className="absolute inset-0 flex items-center justify-center">
               <h3>Manifest</h3>
-            </div>
+      </div>*/}
             <div id="manifest-logo" className="absolute right-4 -bottom-8 sm:right-36 flex items-center  sm:aux-neg-bottom ">
               <SpinningPublicis />
             </div>
