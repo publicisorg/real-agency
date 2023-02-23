@@ -10,8 +10,8 @@ what we stand for moves us for a continuous search \n
  on unleashing creative value for brands. \n
 Conneting strategies, ideas & people through \n
 storytelling and cutting edge experiences. \n
-We make things happen, tangible, shareable. \n
-we make them.`;
+We make things happen, tangible, shareable... \n
+we make them REAL`;
 
 const textTitle = "Shaping true connections";
 

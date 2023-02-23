@@ -8,26 +8,24 @@ const Contact = () => {
     const [ref, inView] = useInView();
 
     const boxVariant = {
-      visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-      hidden: { opacity: 0, y: -100 }, 
+      visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 360, damping: 13, delay: 0 } },
+      hidden: { opacity: 0, scale: 0.8 }, 
     }
-
     const boxVariant2 = {
-      visible: { opacity: 1, y: 0, transition: { duration: 0.75 } },
-      hidden: { opacity: 0, y: -100 }, 
+      visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 360, damping: 13 , delay: 0.1 } },
+      hidden: { opacity: 0, scale: 0.8 }, 
     }
-
     const boxVariant3 = {
-        visible: { opacity: 1, y: 0, transition: { duration: 1 } },
-        hidden: { opacity: 0, y: -100 }, 
+        visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 360, damping: 13 , delay: 0.2 } },
+        hidden: { opacity: 0, scale: 0.8 }, 
     }
     const boxVariant4 = {
-      visible: { opacity: 1, y: 0, transition: { duration: 1.25 } },
-      hidden: { opacity: 0, y: -100 }, 
+      visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 360, damping: 13 , delay: 0.3 } },
+      hidden: { opacity: 0, scale: 0.8 }, 
     }
     const boxVariant5 = {
-      visible: { opacity: 1, y: 0, transition: { duration: 1.5 } },
-      hidden: { opacity: 0, y: -100 }, 
+      visible: { opacity: 1, scale: 1, transition: { type: "spring", stiffness: 360, damping: 13 , delay: 0.4 } },
+      hidden: { opacity: 0, scale: 0.8 }, 
     }
 
     useEffect(() => {
