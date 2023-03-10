@@ -7,11 +7,12 @@ import { useEffect, useState } from "react";
 
 const textSubtitle = `Our daily work, our core, \n
 what we stand for moves us for a continuous search \n
- on unleashing creative value for brands. \n
-Conneting strategies, ideas & people through \n
-storytelling and cutting edge experiences. \n
-We make things happen, tangible, shareable... \n
-we make them REAL`;
+on unleashing creative value for brands. \n
+Connecting strategies and liquid ideas \n
+in a tangible level through \n
+cutting edge experiences. \n
+We make things happen, touchable, shareable... \n
+We make them REAL.`;
 
 const textTitle = "Shaping true connections";
 
