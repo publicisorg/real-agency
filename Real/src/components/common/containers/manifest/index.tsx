@@ -4,12 +4,10 @@ import ManifestBanner from './manifest-banner'
 import Subtitle from '../../subtitle'
 import Title from '../../title'
 
-const subtitleText = `Our daily work, our core, \n 
-what we stand for moves us for a continuous search \n
-on unleashing creative value for brands.`;
+const subtitleText = `THE REAL THING.`;
 
 const spin1 = `Live \n Experiences \n & \n Activation.`;
-const spin2 = `Innmersive \n Tech.`;
+const spin2 = `Innmersive \n Tech`;
 const spin3 = `Talent.`;
 
 const manifest = () => {
@@ -33,7 +31,7 @@ const manifest = () => {
           <line className="cls-1" x1="0" y1="11.57" x2="23.15" y2="11.57"/>
         </svg>
       </div>
-      <Title titleText="Services"/>
+      <Title titleText=""/>
       <div className="flex flex-col sm:flex-row justify-between items-center w-10/12 max-w-4xl mx-auto my-12 wow bounceInUp">
         <Spinning insideText={spin1}/>
         <Spinning insideText={spin2}/>
