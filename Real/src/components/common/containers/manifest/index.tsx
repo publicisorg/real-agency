@@ -32,6 +32,7 @@ const manifest = () => {
         </svg>
       </div>
       <Title titleText=""/>
+      <Title titleText="THE REAL THING"/>
       <div className="flex flex-col sm:flex-row justify-between items-center w-10/12 max-w-4xl mx-auto my-12 wow bounceInUp">
         <Spinning insideText={spin1}/>
         <Spinning insideText={spin2}/>
