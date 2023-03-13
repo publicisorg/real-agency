@@ -22,8 +22,8 @@ function NoiseCanvas() {
         <motion.canvas
             id="tv" 
             className="w-full h-full rounded-3xl pointer-events-none" 
-            initial={{opacity: 1}}
-            whileInView={{opacity:0, transition: {duration: 5}}}
+            initial={{opacity: 2}}
+            whileInView={{opacity:0, transition: {duration: 1}}}
             viewport={{once: false}}
         />
     );
