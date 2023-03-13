@@ -36,7 +36,7 @@ const manifestbanner = () => {
   return (
       <>
       <motion.div variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: true}} className="text-center relative">
-          <motion.video ref={manifestVideo} src="https://desarrollodesitios0.site/real/manifest-eng.mp4" variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: true}} className="mx-auto my-8 rounded-3xl" controls loop muted>
+          <motion.video ref={manifestVideo} src="https://desarrollodesitios0.site/real/manifest-eng.mp4" variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: true}} className="mx-auto my-8 rounded-3xl" controls loop>
             <source type="video/mp4" src="https://desarrollodesitios0.site/real/manifest-eng.mp4"/>
             Your browser does not support the video tag
           </motion.video>
