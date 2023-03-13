@@ -24,15 +24,13 @@ const manifest = () => {
           <line className="cls-1" x1="11.57" x2="11.57" y2="23.15"/>
           <line className="cls-1" x1="0" y1="11.57" x2="23.15" y2="11.57"/>
         </svg>
-      <Subtitle subtitleText={subtitleText}/>
+      <Title titleText="THE REAL THING"/>
         <svg className="w-6 hidden sm:block" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.15 23.15">
           <circle className="cls-1" cx="11.57" cy="11.57" r="8.19"/>
           <line className="cls-1" x1="11.57" x2="11.57" y2="23.15"/>
           <line className="cls-1" x1="0" y1="11.57" x2="23.15" y2="11.57"/>
         </svg>
       </div>
-      <Title titleText=""/>
-      <Title titleText="THE REAL THING"/>
       <div className="flex flex-col sm:flex-row justify-between items-center w-10/12 max-w-4xl mx-auto my-12 wow bounceInUp">
         <Spinning insideText={spin1}/>
         <Spinning insideText={spin2}/>

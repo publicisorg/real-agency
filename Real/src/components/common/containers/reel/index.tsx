@@ -6,24 +6,13 @@ import { useEffect } from "react";
 
 function reel() {
 
-    const control = useAnimation();
-    const [ref, inView] = useInView();
-
     const boxVariant = {
-        visible: { opacity: 1, transition: { duration: 1 } },
+        visible: { opacity: 1, transition: { duration: 2 } },
         hidden: { opacity: 0 }, 
     }
 
-    useEffect(() => {
-        if (inView) {
-            control.start('visible');
-        } else {
-            control.start("hidden");
-        }
-    }, [control, inView]);
-
     return (
-    <motion.div ref={ref} variants={boxVariant} animate={control} initial="hidden" className="reel" id="reel">
+    <motion.div variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: false}} className="reel" id="reel">
         <div className="reel-container">
             <video className="reel-video" src={video} autoPlay muted loop/>
             {/*<div className="reel-title">

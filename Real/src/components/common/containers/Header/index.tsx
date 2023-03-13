@@ -18,22 +18,12 @@ const textTitle = "Shaping true connections";
 
 function Header() {
 
-  const control = useAnimation();
-  const [ref, inView] = useInView();
   const [showIframe, setIframe] = useState<boolean>(false);
 
   const boxVariant = {
       visible: { opacity: 1, scale: 1, rotate: 0, transition: { duration: 1 } },
       hidden: { opacity: 0, scale: 0, rotate: 360 }, 
   }
-
-  useEffect(() => {
-      if (inView) {
-          control.start('visible');
-      } else {
-          control.start("hidden");
-      }
-  }, [control, inView]);
   
   useEffect(() => {
     setIframe(true);
@@ -57,7 +47,7 @@ function Header() {
     </div>
     <Title titleText={textTitle}/>
     <div className="text-center my-5">
-      <motion.svg ref={ref} variants={boxVariant} animate={control} initial="hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      <motion.svg variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: false}} version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
         viewBox="0 0 67.66 65.04" className='logoR'>
 
         <g id="Capa_2">
@@ -80,7 +70,7 @@ function Header() {
         </g>
       </motion.svg>
     </div>
-    <motion.p ref={ref} variants={boxVariant} animate={control} initial="hidden" className='font-vegawanty text-center text-xl'id="about"></motion.p>
+    <motion.p variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: false}} className='font-vegawanty text-center text-xl'id="about"></motion.p>
       <Subtitle subtitleText={textSubtitle}/>
     </>
     );
