@@ -2,7 +2,7 @@ import '../../../../styles/manifest/manifest.css';
 import SpinningPublicis from '../../spinning-publicis'
 import NoiseAnimation from '../../noise-animation';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 
 const manifestbanner = () => {
@@ -22,20 +22,21 @@ const manifestbanner = () => {
         if (manifestState == false) {
           setManifestState(true);
           manifestVideo.current.play()
+          //manifestVideo.current.muted = false;
         }
       } else {
         if (manifestState == true) {
           setManifestState(false);
           manifestVideo.current.pause()
+          //manifestVideo.current.muted = true;
         }
       }
-    
   })
 
   return (
       <>
       <motion.div variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: true}} className="text-center relative">
-          <motion.video ref={manifestVideo} src="https://desarrollodesitios0.site/real/manifest-eng.mp4" variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: true}} className="mx-auto my-8 rounded-3xl" controls autoPlay loop>
+          <motion.video ref={manifestVideo} src="https://desarrollodesitios0.site/real/manifest-eng.mp4" variants={boxVariant} whileInView="visible" initial="hidden" viewport={{once: true}} className="mx-auto my-8 rounded-3xl" controls loop muted>
             <source type="video/mp4" src="https://desarrollodesitios0.site/real/manifest-eng.mp4"/>
             Your browser does not support the video tag
           </motion.video>
